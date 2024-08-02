@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Favorite Moments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="favoritemoments">
+    <div class="container">
+        <h1>Our Favorite Moments</h1>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img 25.jpg" alt="Favorite Moment 1">
+                <p>our first actual cute cute picture , never ever wouldve guessed how many more we'd take </p>
+            </div>
+            <div class="slide fade">
+                <img src="img2.jpg" alt="Favorite Moment 2">
+                <p>absolutely adorable smile , so so so so perfect and so eeeeeeeeeeeeeeee i love it </p>
+            </div>
+            <div class="slide fade">
+                <img src="img3.jpg" alt="Favorite Moment 2">
+                <p>choking my ass ong </p>
+            </div>
+            <div class="slide fade">
+                <img src="img4.jpg" alt="Favorite Moment 2">
+                <p>i like sleeping with you acc, makes me feel very nice and warm and wholesome </p>
+            </div>
+            <div class="slide fade">
+                <img src="img6.jpg" alt="Favorite Moment 2">
+                <p>the shock u had on your face from this one little peck on your cheek hahaha</p>
+            </div>
+            <div class="slide fade">
+                <img src="img7.jpg" alt="Favorite Moment 2">
+                <p>like aru said "bro looks like he wants to eat" , and aru was correct </p>
+            </div>
+            <div class="slide fade">
+                <img src="img8.jpg" alt="Favorite Moment 2">
+                <p>our first date date haha , the pasta and the crepes were gooood</p>
+            </div>
+            <div class="slide fade">
+                <img src="img9.jpg" alt="Favorite Moment 2">
+                <p>hehehe my fav fav picture ,the first flowers i ever got you</p>
+            </div>
+            <div class="slide fade">
+                <img src="img10.jpg" alt="Favorite Moment 2">
+                <p>not really an us picture but couldnt not add , my fav racer girlie </p>
+            </div>
+            <div class="slide fade">
+                <img src="img12.jpg" alt="Favorite Moment 2">
+                <p>the curlss</p>
+            </div>
+            <div class="slide fade">
+                <img src="img14.jpg" alt="Favorite Moment 2">
+                <p>youre so pretty</p>
+            </div>
+            <div class="slide fade">
+                <img src="img18.jpg" alt="Favorite Moment 2">
+                <p>us core fr </p>
+            </div>
+            <div class="slide fade">
+                <img src="img21.jpg" alt="Favorite Moment 2">
+                <p>no words</p>
+            </div>
+            <div class="slide fade">
+                <img src="img22.jpg" alt="Favorite Moment 2">
+                <p>this and the first time are so etched into my memory and what will always make me want to get you more and more and more flowers </p>
+            </div>
+            <div class="slide fade">
+                <img src="img24.jpg" alt="Favorite Moment 2">
+                <p>not a speacial picture per se, but our first pictures after well "us"</p>
+            </div>
+            <div class="slide fade">
+                <img src="img25.jpg" alt="Favorite Moment 2">
+                <p>weve looked at sm pictures of how it is now lets look at where it all began</p>
+            </div>
+            <div class="slide fade">
+                <img src="img26.jpg" alt="Favorite Moment 2">
+                <p>cute cute pic</p>
+            </div>
+            <!-- Add more favorite moments as needed -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Moments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px; /* Add some space at the top */
+        }
+
+        /* Modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* 5% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        /* Close button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>before we begin ive realised almost alll our pictures are on your phone and i do not get them at times ?? which is rude and im very mad at you , but now lets look at these hehehe </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Favorite Moments</h1>
+        <!-- Your favorite moments content goes here -->
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the close button element
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the page is loaded, show the modal
+        window.onload = function() {
+            modal.style.display = "block";
+        };
+
+        // When the user clicks on the close button, hide the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, hide it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

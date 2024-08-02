@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="password"] {
+            width: 200px;
+            padding: 8px;
+            margin: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome cutie</h1>
+        <form id="passwordForm" onsubmit="checkPassword(event)">
+            <label for="password">Please enter the magic words:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function checkPassword(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the password entered by the user
+            var enteredPassword = document.getElementById("password").value;
+
+            // Replace 'password123' with your actual password
+            var correctPassword = "ilovekrishal";
+
+            // Check if the entered password matches the correct password
+            if (enteredPassword === correctPassword) {
+                // If the password is correct, redirect to the main webpage
+                window.location.href = "index3.html";
+            } else {
+                // If the password is incorrect, display an error message
+                alert("damn why dont u love me scam ass");
+            }
+        }
+    </script>
+</body>
+</html>

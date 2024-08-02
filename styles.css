@@ -1,0 +1,218 @@
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('bg1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    opacity: 1; /* Initially set to 1 for fade-in effect */
+    transition: opacity 3s ease; /* Smooth transition for opacity */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+}
+
+h1 {
+    color: #ff7f7f;
+    font-size: 36px;
+}
+nav {
+    margin-top: 50px; /* Increased margin-top for more vertical space */
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+    justify-content: center; /* Center align buttons horizontally */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff7f7f;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px; /* Adjusted margin to provide space between buttons */
+    padding: 10px 20px;
+    border-radius: 30px; /* Increased border-radius for a softer look */
+    background-color: #fff9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background-color and transform */
+}
+
+.favorite-events-link {
+    text-decoration: none;
+    color: #ff7f7f;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px; /* Adjusted margin to provide space between buttons */
+    padding: 10px 20px;
+    border-radius: 30px; /* Increased border-radius for a softer look */
+    background-color: #fff9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background-color and transform */
+}
+
+nav a:hover {
+    background-color: #ffdcdcce; /* Lighter background color on hover */
+    transform: translateY(-8px); /* Lift the button slightly on hover */
+}
+
+/* Your existing styles for the "favoritemoments" page */
+.slideshow-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation: fadeEffect 1s ease-out forwards;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.prev {
+    left: 10px; /* Adjust the left position */
+}
+
+.next {
+    right: 10px; /* Adjust the right position */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Ensure the image fills its container */
+    object-fit: cover; /* Scale the image to cover its entire container */
+}
+
+/* Playlist Page Styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    text-align: center; /* Center align content */
+}
+
+h1 {
+    color: #ff007f; /* Pink heading color */
+    font-size: 36px;
+    margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+/* Playlist Link Styles */
+.playlist-link {
+    text-decoration: none;
+    color: #ff7f7f;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 10px; /* Adjusted margin to provide space between buttons */
+    padding: 10px 20px;
+    border-radius: 30px; /* Increased border-radius for a softer look */
+    background-color: #fff9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.playlist-link:hover {
+    background-color: #ffdcdcce; /* Lighter background color on hover */
+    transform: translateY(-5px); /* Lift the button slightly on hover */
+}
+
+
+/* Image Sizes */
+.image {
+    width: 300px; /* Set the width of all images */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    display: none;
+}
+.description {
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 16px; /* Adjust the font size */
+    color: #333; /* Change the color of the text */
+    line-height: 1.5; /* Increase line height for better readability */
+    margin-top: 10px; /* Add some margin at the top */
+}
+/* CSS */
+.textarea-container {
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    width: 100%;
+    height: auto;
+    resize: none; /* Prevent resizing */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width */
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
